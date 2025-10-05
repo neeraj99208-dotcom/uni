@@ -1,0 +1,728 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: black;
+    background-image: url('rocket.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+html {
+  scroll-behavior: smooth;/*use to create smooth scroll*/
+}
+
+/* .first {
+    height: 80px;
+    width: 80%;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 230px;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    backdrop-filter: blur(40px);
+    color: rgb(10, 10, 10);
+    /* position: sticky; */
+*/
+
+/* #logo {
+    height: 60px;
+    width: 80px;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 1600px;
+    padding-top: 10px;
+    text-shadow: 1px 2px 0px blueviolet;
+    box-shadow: inset 10px 10px 10px gold;
+} */
+
+header {
+  position: relative;
+  z-index: 1;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 7vh;
+    min-width: 99vw;
+    border: 2px solid rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(20, 20, 20, 0.8);
+    /* dark semi-transparent */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    align-items: center;
+}
+/*to make nav bar sticky or fixed first we have to give position relative and z-index -1 to parent*/
+.first {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 1.5vmax;
+    right: 5%;
+    position: absolute;
+    top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    height: 50px;
+    width: 80px;
+    color: wheat;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow: 1px 2px 0px blueviolet;
+    box-shadow: inset 20px 10px 10px gold;
+    /* height: 60px;
+    width: 80px; */
+    color: aliceblue;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 30px;
+    padding-top: 10px;
+    text-shadow: 1px 2px 0px blueviolet;
+    box-shadow: inset 10px 10px 10px gold;
+    font-size:1.3vmax;
+}
+
+a:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 10%;
+    height: 100%;
+
+}
+
+.d {
+    color: aliceblue;
+    font-weight: bolder;
+    animation: write 1s linear 1 forwards;
+    margin-left: 15%;
+    font-size: 40%;
+}
+
+@keyframes write {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+#h {
+    display: flex;
+    justify-content: center;
+    padding-top: 320px;
+    font-size: 60px;
+}
+
+#hh {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+#main {
+    position: relative;
+}
+#planet {
+    position: absolute;
+    max-width: 100%;
+    max-height: 70%;
+    /* width: 450px; */
+    border-radius: 10px;
+    /* filter: brightness(150%);
+    filter: brightness(1.2) contrast(110%) saturate(120%);
+    box-shadow: #c370ff 0 0 70px; */
+}
+#para {
+    height: 80vh;
+    width: 30%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 1%;
+    top: 80vh;
+    color: rgb(254, 253, 253);
+    /* font-size: 30px;  */
+    display: grid;
+    grid-template-columns: 90%;
+    box-shadow: 0 0 8px #ffbd69;
+}
+
+#para h1 {
+    color: white;
+    position:absolute;
+    top:65%;
+    left:20%;
+    font-size:350%;
+}
+
+#para button{
+    height:10%;
+    width:40%;
+    border:2px solid purple;
+    border-radius: 20%;
+    left:40%;
+    position:absolute;
+    top:80%;
+    font-size:120%;
+    cursor: pointer;
+    background-color: black;
+    color:whitesmoke;
+}
+mark {
+    color: yellow;
+}
+
+#pl {
+    padding-left: 300px;
+    color: rgb(245, 244, 244);
+}
+
+.gal {
+    height: 80vh;
+    width: 30%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 35%;
+    top: 80vh;
+    color: rgb(254, 253, 253);
+    /* font-size: 30px;  */
+    box-shadow: 0 0 8px #ffbd69;
+}
+
+#andromeda {
+    position: absolute;
+    max-width: 100%;
+    height: 60%;
+    /* width: 450px; */
+    top: 0%;
+    border-radius: 15px;
+    left: 0%;  
+    /* filter: brightness(150%);
+    filter: brightness(1.2) contrast(110%) saturate(120%);
+    box-shadow: #c370ff 0 0 70px; */
+    /* position: absolute;
+    /* right: 30px; */
+    /* max-width: 60%;
+    width: 600px;
+    /* top: 1100px; */
+    /* border-radius: 30px;
+    box-shadow: #c370ff 0 0 70px; */
+}
+.gal h1{
+    color: white;
+    position:absolute;
+    top:65%;
+    left:20%;
+    font-size:350%;
+}
+.gal button{
+    height:10%;
+    width:40%;
+    border:2px solid purple;
+    border-radius: 20%;
+    left:40%;
+    position:absolute;
+    top:80%;
+    font-size:120%;
+    cursor: pointer;
+    background-color: black;
+    color:whitesmoke;
+}
+#section2 {
+    color: rgb(240, 230, 217);
+    position: absolute;
+    top: 48%;
+    left: 30%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 2.4vmax;
+}
+
+#galaxy {
+    color:white;
+    position:absolute;
+    top:67%;
+    left:20%;
+    font-size:350%;
+}
+#telescope {
+    height: 80vh;
+    width: 30%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 69%;
+    top: 80vh;
+    color: rgb(254, 253, 253);
+    /* font-size: 30px;  */
+    display: grid;
+    grid-template-columns: 90%;
+    box-shadow: 0 0 8px #ffbd69;
+}
+#telescope img{
+    position: absolute;
+    max-width: 100%;
+}
+#telescope h1{
+    color: white;
+    position:absolute;
+    top:65%;
+    left:20%;
+    font-size:350%;
+
+}
+#telescope button{
+    height:10%;
+    width:40%;
+    border:2px solid purple;
+    border-radius: 20%;
+    left:40%;
+    position:absolute;
+    top:80%;
+    font-size:120%;
+    cursor: pointer;
+    background-color: black;
+    color:whitesmoke;
+}
+#input3:hover{
+    height:100%;
+    background-color: transparent;
+    color:purple;
+}
+#blackhole {
+    height: 80vh;
+    width: 30%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 1%;
+    top: 175vh;
+    color: rgb(254, 253, 253);
+    /* font-size: 30px;  */
+    display: grid;
+    grid-template-columns: 90%;
+    box-shadow: 0 0 8px #ffbd69;
+}
+#blackhole img{
+    position:absolute;
+    max-width: 100%;
+    height:50%;
+}
+#blackhole h1{
+    color: white;
+    position:absolute;
+    top:60%;
+    left:20%;
+    font-size:350%;
+}
+#blackhole button{
+    height:10%;
+    width:40%;
+    border:2px solid purple;
+    border-radius: 20%;
+    left:40%;
+    position:absolute;
+    top:75%;
+    font-size:120%;
+    cursor: pointer;
+    background-color: black;
+    color:whitesmoke;
+}
+#nebula {
+    height: 80vh;
+    width: 30%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 35%;
+    top: 175vh;
+    color: rgb(254, 253, 253);
+    /* font-size: 30px;  */
+    display: grid;
+    grid-template-columns: 90%;
+    box-shadow: 0 0 8px #ffbd69;
+}
+#nebula img{
+    position:absolute;
+    max-width: 100%;
+     height:50%; 
+     /* top:5%; */
+}
+#nebula h1{
+    color: white;
+    position:absolute;
+    top:60%;
+    left:20%;
+    font-size:350%;
+}
+#nebula button{
+    height:10%;
+    width:40%;
+    border:2px solid purple;
+    border-radius: 20%;
+    left:40%;
+    position:absolute;
+    top:75%;
+    font-size:120%;
+    cursor: pointer;
+    background-color: black;
+    color:whitesmoke;
+}
+#mission {
+    height: 80vh;
+    width: 30%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 69%;
+    top: 175vh;
+    color: rgb(254, 253, 253);
+    /* font-size: 30px;  */
+    display: grid;
+    grid-template-columns: 90%;
+    box-shadow: 0 0 8px #ffbd69;
+}
+#mission img{
+    position:absolute;
+    max-width: 100%;
+     height:50%;
+}
+#mission h1{
+    color: white;
+    position:absolute;
+    top:60%;
+    left:20%;
+    font-size:350%;
+}
+#mission button{
+    height:10%;
+    width:40%;
+    border:2px solid purple;
+    border-radius: 20%;
+    left:40%;
+    position:absolute;
+    top:75%;
+    font-size:120%;
+    cursor: pointer;
+    background-color: black;
+    color:whitesmoke;
+}
+.bigbox {
+    height: 550px;
+    width: 90em;
+    border: 2px solid transparent;
+    position: absolute;
+    top: 125em;
+    left: 3em;
+    color: beige;
+    backdrop-filter: blur(10px);
+    /* display: inline-block; */
+    max-width: 100%;
+}
+
+#hhhh {
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.mixbox {
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all ease-in-out 0.1s;
+}
+
+.mixbox:hover {
+    transform: scale(1.1);
+}
+
+.mixbox img {
+    height: 200px;
+    width: 230px;
+    position: absolute;
+    left: 90px;
+}
+
+.mixbox p {
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 90%;
+}
+
+.mix {
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    position: absolute;
+    left: 520px;
+    top: 100px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.1s;
+}
+
+.mix:hover {
+    transform: scale(1.1);
+}
+
+.mix p {
+    position: absolute;
+    top: 190px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 90%;
+}
+.mix img {
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    left: 90px;
+}
+
+.mi {
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    position: absolute;
+    left: 63em;
+    top: 100px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.1s;
+}
+.mi:hover {
+    transform: scale(1.1);
+}
+.mi p {
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 85%;
+}
+.mi img {
+    height: 190px;
+    width: 260px;
+    position: absolute;
+    left: 100px;
+}
+.mi h1{
+    font-size: 25px;
+}
+marquee {
+
+    color: rgb(249, 248, 247);
+    font-size: 25px;
+    white-space: nowrap;
+    height: 140px;
+    width: 45em;
+    border: 2px solid rgb(7, 6, 6);
+    position: absolute;
+    top: 102em;
+    left: 15%;
+    animation: slide 1s linear 1 forwards;
+    box-shadow: inset rgb(14, 2, 2);
+    color: blanchedalmond;
+    /* font-size:28px; */
+    /* white-space: nowrap; /* Keep each message in one line */
+     padding-top:50px;  
+}
+
+/* .nj {
+    height: 80px;
+    width: 160px;
+    border: 2px solid white;
+    margin: 10px;
+    position: relative;
+    left: 70px;
+    border-radius: 10px;
+    color: rgb(246, 248, 248);
+    background-image: url("nebula.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all ease-in 0.1s;
+    top: 10px;
+}
+
+.nj:hover {
+    transform: scale(1.3);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+} */
+
+#futurescope {
+    height: 700px;
+    width: 90%;
+    border: 2px solid rgb(248, 245, 245);
+    position: absolute;
+    top: 170em;
+    left: 6em;
+    color: rgb(7, 7, 7);
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+#futurescope h1 {
+    position: absolute;
+    left: 6em;
+    font-size: 40px;
+}
+
+#futurescope p {
+    position: absolute;
+    top: 4em;
+    font-size: 20px;
+}
+
+big {
+    color: darkblue;
+}
+
+#form {
+    height: 500px;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: aliceblue;
+    position: absolute;
+    top: 10em;
+    left: 38em;
+    padding-top: 10%;
+    padding-left: 5%;
+    line-height: 40px;
+    backdrop-filter: blur(10px);
+}
+
+#foooo {
+    height: 800px;
+    width: 100%;
+    background-image: url('opp.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 210em;
+}
+
+.foot {
+    height: 400px;
+    width: 99vw;
+    background-color: brown;
+    position: absolute;
+    top: 250em;
+}
+
+.foot-text {
+    height: 90%;
+    border-right: 2px solid white;
+    position: absolute;
+    right: 45%;
+    top: 30px;
+}
+
+.foot-text p {
+    color: white;
+    position: absolute;
+    /* right:20%; */
+    font-size: 70px;
+}
+
+.foot-text button {
+    position: absolute;
+    left: 15em;
+    height: 4em;
+    width: 10em;
+    top: 50%;
+    background-color: #c370ff;
+    border-radius: 10px;
+    /* color:rgb(6, 211, 20); */
+    font-size: 20px;
+}
+
+.footleft p {
+    color: white;
+    font-size: 40px;
+}
+
+.footleft ul {
+    color: #D3D3D3;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.footleft h1 {
+    font-size: 50px;
+    position: absolute;
+    left: 10%;
+    top: 52%;
+    color: pink;
+}
+
+.footleft button {
+    height: 2em;
+    width: 6em;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    font-size: 40px;
+    background-color: dimgrey;
+    border-radius: 10px;
+    color: palegoldenrod;
+}

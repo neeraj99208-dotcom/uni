@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Kitchen - Exquisite Dining Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for unique touches */
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0be1496d-c18b-4349-84d5-18d956a787c1.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #f7931e, #ff6b35);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-orange-600">Gourmet Kitchen</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-orange-600 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-orange-600 transition">About</a></li>
+                    <li><a href="#menu" class="hover:text-orange-600 transition">Menu</a></li>
+                    <li><a href="#contact" class="hover:text-orange-600 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-5xl font-extrabold mb-4">Welcome to Gourmet Kitchen</h2>
+            <p class="text-xl mb-6">Experience culinary excellence with fresh ingredients and unique flavors crafted by our expert chefs.</p>
+            <a href="#menu" class="btn-primary text-white px-6 py-3 rounded-full font-semibold inline-block hover:shadow-lg transition">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/be87e879-1d44-46bf-9926-bd592e2d548f.png" alt="Professional chef in a modern kitchen expertly preparing a gourmet meal with fresh vegetables on a sleek counter, steam rising from sizzling pans, highlighting culinary skills and passion for food" class="rounded-lg shadow-lg">
+                </div>
+                <div class="lg:w-1/2 lg:pl-8">
+                    <h2 class="text-3xl font-bold mb-4">About Us</h2>
+                    <p class="mb-4">At Gourmet Kitchen, we pride ourselves on serving mouthwatering dishes made from the finest, locally-sourced ingredients. Our passion for food and hospitality ensures every meal is an unforgettable experience. Founded in 2020, we've become a beloved spot for food enthusiasts seeking innovation and tradition.</p>
+                    <p>Join us for a journey of flavors that celebrate seasonality and culinary creativity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Signature Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/89970934-e66e-45b7-8f80-13abea3328fc.png" alt="Perfectly grilled salmon fillet on a bed of mixed greens, adorned with lemon slices and cherry tomatoes, steam rising with aromatic herbs, emphasizing freshness and elegant presentation" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Grilled Salmon</h3>
+                        <p class="text-gray-600 mb-4">Fresh Atlantic salmon grilled to perfection with herb butter and seasonal vegetables.</p>
+                        <span class="text-orange-600 font-bold">$24.99</span>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bdaf2fdc-e75d-4934-89f1-47f201d54931.png" alt="Creamy truffle pasta in a porcelain bowl, garnished with freshly grated Parmesan cheese and parsley sprigs, golden sauce swirling with earthy truffle oil, showcasing indulgence and gourmet detail" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Truffle Risotto</h3>
+                        <p class="text-gray-600 mb-4">Creamy Arborio rice infused with black truffle and Parmesan, finished with chives.</p>
+                        <span class="text-orange-600 font-bold">$22.50</span>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/daf2e9ff-1d8f-4250-92e2-d0b73908e789.png" alt="Layered chocolate tuxedo cake with rich fudge icing, topped with fresh raspberries and powdered sugar dusting, smooth ganache dripping slightly, capturing decadence and artistry" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Tuxedo Cake</h3>
+                        <p class="text-gray-600 mb-4">Decadent chocolate cake layered with vanilla cream, perfect for a sweet ending.</p>
+                        <span class="text-orange-600 font-bold">$9.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="flex flex-col lg:flex-row justify-center items-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4fde98da-6cad-4c74-80b4-3d0e9f9a02eb.png" alt="Charming restaurant exterior with warm lighting at night, welcoming entrance with hanging lanterns, outdoor seating with potted plants, evoking a cozy and inviting atmosphere for dining" class="rounded-lg shadow-lg lg:w-1/2 mb-8 lg:mb-0 lg:mr-8">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <p class="mb-4"><strong>Address:</strong> 123 Culinary Street, Food City, FC 45678</p>
+                    <p class="mb-4"><strong>Phone:</strong> (555) 123-4567</p>
+                    <p class="mb-4"><strong>Email:</strong> info@gourmetkitchen.com</p>
+                    <p class="mb-4"><strong>Hours:</strong> Mon-Sun: 11am - 10pm</p>
+                    <a href="#menu" class="btn-primary text-white px-6 py-3 rounded-full font-semibold inline-block hover:shadow-lg transition">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Gourmet Kitchen. All rights reserved. Crafted with passion for food lovers.</p>
+        </div>
+    </footer>
+</body>
+</html>
+</content>
+</create_file>

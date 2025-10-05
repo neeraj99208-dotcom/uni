@@ -1,0 +1,264 @@
+#main {
+    position: relative;
+}
+
+#image {
+    width: 100px;
+    position: absolute;
+    left: 350px;
+    top: -120px;
+}
+
+#planet {
+    position: absolute;
+    width: 450px;
+    top: 400px;
+    border-radius: 10px;
+    left: 40px;
+    filter: brightness(150%);
+    filter: brightness(1.2) contrast(110%) saturate(120%);
+    box-shadow: #c370ff 0 0 70px;
+}
+
+#para {
+    /* height: 450px;
+    width: 900px; */
+    /* border: 2px solid transparent;
+    border-radius: 10px; */
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    left: 550px;
+    top: 350px;
+    color: rgb(254, 253, 253);
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 90%;
+}
+
+mark {
+    color: yellow;
+}
+
+#pl {
+    padding-left: 300px;
+    color: rgb(245, 244, 244);
+}
+
+#andromeda {
+    position: absolute;
+    right: 30px;
+    width: 600px;
+    top: 1020px;
+    border-radius: 30px;
+    box-shadow: #c370ff 0 0 70px;
+}
+
+#section2 {
+    color: bisque;
+    position: absolute;
+    top: 1000px;
+    left: 400px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+#galaxy {
+    height: 300px;
+    width: 800px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: whitesmoke;
+    position: absolute;
+    top: 1100px;
+    left: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bigbox {
+    height: 550px;
+    width: 90em;
+    border: 2px solid transparent;
+    position: absolute;
+    top: 100em;
+    left: 3em;
+    color: beige;
+    backdrop-filter: blur(10px);
+    display: inline-block;
+}
+
+#hhhh {
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.mixbox {
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all ease-in-out 0.1s;
+}
+
+.mixbox:hover {
+    transform: scale(1.1);
+}
+
+.mixbox img {
+    height: 200px;
+    width: 230px;
+    position: absolute;
+    left: 90px;
+}
+
+.mixbox p {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 80%;
+}
+
+.mix {
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    position: absolute;
+    left: 520px;
+    top: 100px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.1s;
+}
+
+.mix:hover {
+    transform: scale(1.1);
+}
+
+.mix p {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 80%;
+}
+
+.mix img {
+    height: 180px;
+    width: 260px;
+    position: absolute;
+    left: 80px;
+}
+
+.mi {
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    display: flex;
+    position: absolute;
+    left: 63em;
+    top: 100px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.1s;
+}
+
+.mi:hover {
+    transform: scale(1.1);
+}
+
+.mi p {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 80%;
+}
+
+.mi img {
+    height: 180px;
+    width: 260px;
+    position: absolute;
+    left: 120px;
+}
+
+.scroller {
+    height: 120px;
+    width: 80em;
+    border: 2px solid white;
+    position: absolute;
+    top: 142em;
+    left: 130px;
+    display: flex;
+    flex-direction: row;
+    /* This is optional; row is default */
+    gap: 50px;
+    animation: slide 1s linear 1 forwards;
+}
+
+.nj {
+    height: 80px;
+    width: 160px;
+    border: 2px solid white;
+    margin: 10px;
+    position: relative;
+    left: 70px;
+    border-radius: 10px;
+    color: rgb(246, 248, 248);
+    background-image: url("nebula.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all ease-in 0.1s;
+    top: 10px;
+}
+
+.nj:hover {
+    transform: scale(1.3);
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+#futurescope {
+    height: 700px;
+    width: 80em;
+    border: 2px solid rgb(248, 245, 245);
+    position: absolute;
+    top: 160em;
+    left: 8em;
+    color: rgb(7, 7, 7);
+    background-color: bisque;
+    border-radius: 10px;
+}
+#futurescope h1{
+    position:absolute;
+    left:6em;
+    font-size:40px;
+}
+#futurescope p{
+    position:absolute;
+    top:4em;
+    font-size: 20px;
+}
+big{
+    color:darkblue;
+}

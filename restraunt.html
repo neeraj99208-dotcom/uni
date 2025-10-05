@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Bites - Modern Bistro & Cafe</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS for utility classes and styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom CSS for a unique, modern feel */
+        :root {
+            --primary-color: #DD6B20; /* A vibrant orange */
+            --secondary-color: #2D3748; /* A dark slate gray */
+            --background-color: #F7FAFC; /* A very light gray */
+            --text-color: #4A5568; /* A medium gray */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            scroll-behavior: smooth;
+        }
+
+        /* Using a more classic font for specific text elements to create contrast */
+        .font-serif {
+            font-family: 'Lora', serif;
+        }
+
+        /* Custom underline animation for nav links */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: var(--primary-color);
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Hero section with a gradient overlay */
+        .hero-section {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('https://placehold.co/1920x1080/4A5568/FFFFFF?text=Modern+Eatery');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Custom button styling */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 14px 0 rgba(221, 107, 32, 0.39);
+        }
+        .btn-primary:hover {
+            background-color: #C05621; /* Darker orange */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(221, 107, 32, 0.45);
+        }
+
+        /* Styling for the menu cards */
+        .menu-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Testimonial card styling */
+        .testimonial-card {
+            background-color: white;
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                Urban<span class="text-orange-600">Bites</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="nav-link text-gray-600 font-medium">Our Philosophy</a>
+                <a href="#menu" class="nav-link text-gray-600 font-medium">Menu</a>
+                <a href="#testimonials" class="nav-link text-gray-600 font-medium">Reviews</a>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section h-[600px] flex items-center">
+            <div class="container mx-auto px-6 text-white">
+                <div class="max-w-xl">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Where The City Comes to Eat.</h1>
+                    <p class="text-lg text-gray-200 mb-8 font-serif">
+                        Fresh ingredients, bold flavors, and a vibrant atmosphere. Discover your new favorite dish today.
+                    </p>
+                    <a href="#menu" class="btn btn-primary text-lg">See The Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us / Our Philosophy Section -->
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Globally Inspired, Locally Sourced.</h2>
+                    <p class="mb-4 font-serif italic text-gray-600">
+                        "Food is not just eating energy. It's an experience." - Guy Fieri
+                    </p>
+                    <p class="text-gray-600">
+                        At Urban Bites, we believe in creating exciting dishes that reflect the diverse tapestry of modern urban life. We partner with local farmers and suppliers in and around Mumbai to bring you the freshest ingredients, which our chefs transform into creative and delicious meals. It's food you can feel good about.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x450/EDF2F7/2D3748?text=Our+Vibrant+Kitchen" alt="Our team preparing food" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800">Our Signature Dishes</h2>
+                    <p class="text-gray-600 mt-2">Crafted with love, just for you.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Menu Item 1 -->
+                    <div class="menu-card">
+                        <img src="https://placehold.co/600x400/FBD38D/2D3748?text=Spicy+Tacos" alt="Spicy Chicken Tacos" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Spicy Chicken Tacos</h3>
+                            <p class="text-gray-600 mb-4">Marinated chicken, fresh salsa, avocado cream, and a hint of lime.</p>
+                            <p class="text-xl font-bold text-orange-600">$18</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="menu-card">
+                        <img src="https://placehold.co/600x400/B2F5EA/2D3748?text=Gourmet+Burger" alt="The Urban Burger" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">The Urban Burger</h3>
+                            <p class="text-gray-600 mb-4">Juicy beef patty, aged cheddar, caramelized onions, and our secret sauce.</p>
+                            <p class="text-xl font-bold text-orange-600">$22</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="menu-card">
+                        <img src="https://placehold.co/600x400/A5B4FC/2D3748?text=Quinoa+Salad" alt="Avocado Quinoa Bowl" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Avocado Quinoa Bowl</h3>
+                            <p class="text-gray-600 mb-4">A healthy mix of quinoa, avocado, cherry tomatoes, and lemon vinaigrette.</p>
+                            <p class="text-xl font-bold text-orange-600">$16</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800">What Our Customers Say</h2>
+                    <p class="text-gray-600 mt-2">We're blushing!</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card p-8 rounded-lg shadow-sm">
+                        <p class="font-serif italic text-gray-700 mb-4">"The best burger I've had in Mumbai, hands down. The atmosphere is chic and modern, perfect for a night out. Will be back for sure!"</p>
+                        <p class="font-bold text-gray-800">- Priya S.</p>
+                    </div>
+                    <div class="testimonial-card p-8 rounded-lg shadow-sm">
+                        <p class="font-serif italic text-gray-700 mb-4">"I love the focus on fresh, local ingredients. You can really taste the quality. The quinoa bowl is my go-to for a healthy and delicious lunch."</p>
+                        <p class="font-bold text-gray-800">- Rohan M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-secondary-color text-gray-300">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Urban<span class="text-orange-500">Bites</span></h3>
+                    <p class="text-gray-400">A modern bistro for the modern palate.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+                    <p>456 Eatery Avenue, Bandra, Mumbai</p>
+                    <p>Email: <a href="mailto:hello@urbanbites.com" class="text-orange-500 hover:underline">hello@urbanbites.com</a></p>
+                    <p>Phone: <a href="tel:+919876543210" class="text-orange-500 hover:underline">+91 98765 43210</a></p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Hours</h3>
+                    <p>Tuesday - Sunday: 12:00 PM - 11:00 PM</p>
+                    <p>Monday: Closed</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Urban Bites. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

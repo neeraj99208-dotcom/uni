@@ -1,0 +1,133 @@
+body{
+    text-align:center;
+    /* background-color: rgb(128, 19, 19); */
+    /* background-image:url("bluee.mp4"); 
+    background-size: cover;     
+    height: 100%;
+    width:99%; */
+}
+.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* send behind content */
+    }
+nav {
+    height: 7vh;
+    min-width: 100%;
+    /* border: 2px solid rgb(10, 10, 10); */
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(20, 20, 20, 0.8);
+    /* dark semi-transparent */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    align-items: center;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.first {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 1.5vmax;
+    right: 5%;
+    position: absolute;
+    top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    height: 40px;
+    width: 70px;
+    color: wheat;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow: 1px 2px 0px blueviolet;
+    box-shadow: inset 20px 10px 10px gold;
+    color: aliceblue;
+    border: 2px solid rgb(12, 12, 12);
+    padding-top: 10px; 
+    font-size: 130%;
+    text-decoration: none;
+    /* position: absolute;
+    left:0px;
+    top:-1px; */
+}
+
+a:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 10%;
+    height: 100%;
+
+}
+h1{
+    text-decoration:underline;
+    color:orangered;
+
+}
+#foooo{
+    height:500px;
+    width:400px;
+    border:2px solid rgba(57, 57, 212, 0.5);
+   display:inline-block;
+   border-radius:8px;
+    position:relative;
+    top:70px;
+    margin-top:5%;
+    border-radius:10px;
+    background-color:transparent;
+    backdrop-filter:blur(7px);
+    /* right:20%; */
+   /* background-color: blue; */
+}    
+.done{
+    background-color:rgb(115, 255, 0);
+    margin-top:30px;
+    border-radius:100px;
+    cursor: pointer;
+}
+.done:hover{
+    background-color:rgb(173, 230, 177);
+    color:brown;
+}
+/* p:hover{
+    background-color:blue;
+} */
+p{
+    cursor: pointer;
+}
+.noo{
+    margin-top:20px;
+    border-radius:20px;
+    height:50px;
+    width:300px;
+    border-color:rgb(165, 42, 42);
+}
+@keyframes p{
+    from{font-size:20px;}
+    to{font-size:40px;}
+}
+/* .box{
+    height:500px;
+    width:400px;
+    background-color: white;
+    position:absolute;
+    top:0%;
+    left:100%;
+    background-image: url("uu.jpg");
+    background-size: cover;
+} */
